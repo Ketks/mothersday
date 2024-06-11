@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY MOTHER</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="H">Home</a></li>
+                    <li><a href="H">Menu</a></li>
+                    <li><a href="H">Design</a></li>
+                    <li><a href="H">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>"Mother's Day"<br>My Beautiful <span>Mother</span></h2>
+                    <p>Ever when I was a child
+                        <br>until the day I grew tall.
+                        <br>Since I started to comprehend things
+                        <br>till the day I have my own set of wings</p>
+                        <br>
+                        <p>Your love has never let you down.
+                        <br>You have been my love ally.
+                        <br>I want to give you a bear hug.
+                        <br>Just a little note of gratitude.</p>
+                    <a href="https://youtu.be/0msaiGvEoRY">Click to Watch</a>
+                </div>
+                <div class="imgBox">
+                    <img src="img1.png" class="envelope">
+                </div>    
+            </div>
+            <ul class="thumb">
+                <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#94745c')"></li>
+                <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#c61a09')"></li>
+                <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#a05a41')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.envelope').src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
